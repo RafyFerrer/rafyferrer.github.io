@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<script>
+		
+			function ejecuta(){
+				const texto = document.getElementById ("A").value;
+				const declaracion = new SpeechSynthesisUtterance(texto);
+				window.speechSynthesis.speak(declaracion);
+			}
+		
+		</script>
+	
+	
+	</head>
+	
+	<body>
+	
+		<input type="text" id="A"/>
+		<button id="B" onclick="ejecuta()">
+			HAZ CLICK
+		</button>
+	
+	</body>
+
+
+</html>
