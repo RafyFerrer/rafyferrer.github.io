@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimiento de Objeto con Imagen</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #canvas {
+            display: block;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        // Clase que modela el objeto
+        class Box {
+            constructor(x, y, size, imgSrc) {
+                this.x = x;
+                this.y = y;
+                this.size = size;
+                this.image = new Image();
+                this.image.src = imgSrc;
+            }
+
+            // Método para dibujar el objeto en el canvas
+            draw(ctx) {
+                ctx.drawImage(this.image, this.x, this.y, this.size, this.size);
+            }
+
+            // Métodos para mover el objeto
+            moveLeft() {
+                this.x -= 5;
+            }
+
+            moveRight() {
+                this.x += 5;
+            }
+
+            moveUp() {
+                this.y -= 5;
+            }
+
+            moveDown() {
+                this.y += 5;
+            }
+        }
+
+        // Configuración del canvas
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // Crear una instancia del objeto con una imagen
+        const box = new Box(50, 50, 50, 'objeto.jpg');
+
+        // Función para limpiar el canvas y redibujar el objeto
+        function update() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            box.draw(ctx);
+        }
+
+        // Escuchar eventos de teclado
+        window.addEventListener('keydown', (e) => {
+            switch (e.key) {
+                case 'ArrowLeft':
+                    box.moveLeft();
+                    break;
+                case 'ArrowRight':
+                    box.moveRight();
+                    break;
+                case 'ArrowUp':
+                    box.moveUp();
+                    break;
+                case 'ArrowDown':
+                    box.moveDown();
+                    break;
+            }
+            update();
+        });
+
+        // Dibujar el objeto inicial cuando la imagen esté cargada
+        box.image.onload = () => {
+            update();
+        };
+    </script>
+</body>
+</html>
