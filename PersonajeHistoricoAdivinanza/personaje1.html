@@ -4,7 +4,24 @@
         <meta charset="utf-8">
         <meta name="description" content="Juego de adivina la enfermedad del personaje">
         <meta name="keywords" content="personaje, histórico, juego, adivina">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Primer Personaje</title>
+        <script>
+            function comprueba(){
+
+                var s=document.getElementById("selector");
+                var r=document.getElementById("resultado");
+                if (s.value == "1"){
+                    r.textContent="ACERTASTE";
+                }
+                else{
+                    r.textContent="FALLASTE"
+                }
+
+            }
+
+
+        </script>
     </head>
     <body>
 
@@ -15,12 +32,12 @@
         </div>
         <strong>Científica especializada en energía nuclear. Descubrió el Polonio y el radio, dos materiales muy radiactivos, con lo que estuvo mucho tiempo expuesta a este tipo de radiación</strong>
         <strong>¿Cual fue su enfermedad?</strong>
-        <select>
+        <select id="selector" onchange="comprueba()">
             <option value="0">Gripe infecciosa</option>
             <option value="1">Contaminación por radiación</option>
             <option value="2">Muerte por accidente de tráfico</option>
         </select>
-        
+        <h1 id="resultado"></h1>
     </body>
 
 </html>
