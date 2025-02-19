@@ -1,8 +1,15 @@
 table, td{
     border: 3px green solid;
 }
-h1{
+h1, div{
     border: 2px blue solid;
     box-shadow:  10px 10px 10px grey;
     border-radius: 20px;
+    padding: 20px;
+}
+.preguntas{
+    font-size: 40px;
+}
+.selectores{
+    font-size: 40px;
 }
