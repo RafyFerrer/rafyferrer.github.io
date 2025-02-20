@@ -13,3 +13,9 @@ h1, div{
 .selectores{
     font-size: 20px;
 }
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fx);
+    gap: 10px;
+}
