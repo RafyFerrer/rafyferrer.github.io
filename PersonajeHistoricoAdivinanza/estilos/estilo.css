@@ -15,7 +15,7 @@ h1, div{
 }
 .contenedor{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fx);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fx);
     gap: 10px;
 }
