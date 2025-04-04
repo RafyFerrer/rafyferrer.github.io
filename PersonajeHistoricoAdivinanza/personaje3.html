@@ -12,7 +12,7 @@
 
                 var s=document.getElementById("selector");
                 var r=document.getElementById("resultado");
-                if (s.value == "1"){
+                if (s.value == "0"){
                     r.src="images/Ok.png";
                 }
                 else{
@@ -28,19 +28,27 @@
 
         <h1 align="center">MARIE CURIE</h1>
         <div align="center">
-            <img src="images/MarieCurie.jpg" alt="falta imagen de Marie Curie">
+            <img src="images/personaje3.jpg" alt="falta imagen" width="150" height="150">
            
         </div>
         <div>
-            <strong>Científica especializada en energía nuclear. Descubrió el Polonio y el radio, dos materiales muy radiactivos, con lo que estuvo mucho tiempo expuesta a este tipo de radiación</strong>
+            <strong>
+                Actor.
+            </strong>
+            <strong>
+                Comenzó a experimentar los primeros síntomas de la enfermedad durante el rodaje de Doc Hollywood (1990). Tenía 34 años.
+Tenía Temblores, Rigidez, Dificultad para caminar y Dificultad para hablar. 
+Mantuvo su enfermedad en secreto durante los años siguientes. 
+Ha liderado actividades científicas para concientizar sobre esta enfermedad.
+            </strong>
         </div>
         <div>
             <strong class="preguntas">¿Cual fue su enfermedad?</strong>
             <select id="selector" class="selectores" onchange="comprueba()">
                 <option value="" disabled selected>Selecciona una opción</option>
-                <option value="0" class="selectores">Gripe infecciosa</option>
-                <option value="1" class="selectores">Contaminación por radiación</option>
-                <option value="2" class="selectores">Muerte por accidente de tráfico</option>
+                <option value="0" class="selectores">Parkinson</option>
+                <option value="1" class="selectores">Esclerosis</option>
+                <option value="2" class="selectores">Gripe</option>
             </select>
         </div>
         <div align="center">
