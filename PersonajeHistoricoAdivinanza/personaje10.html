@@ -12,7 +12,7 @@
 
                 var s=document.getElementById("selector");
                 var r=document.getElementById("resultado");
-                if (s.value == "1"){
+                if (s.value == "2"){
                     r.src="images/Ok.png";
                 }
                 else{
@@ -26,21 +26,26 @@
     </head>
     <body>
 
-        <h1 align="center">MARIE CURIE</h1>
+        <h1 align="center">BRIAN GRANT</h1>
         <div align="center">
-            <img src="images/MarieCurie.jpg" alt="falta imagen de Marie Curie">
+            <img src="images/personaje10.jpg" alt="falta imagen" width="150" height="150">
            
         </div>
         <div>
-            <strong>Científica especializada en energía nuclear. Descubrió el Polonio y el radio, dos materiales muy radiactivos, con lo que estuvo mucho tiempo expuesta a este tipo de radiación</strong>
+            <strong>
+                jugador de baloncesto norteamericano.
+            </strong>
+            <strong>
+                Grant habla con total naturalidad de los temblores que sufre ("no les tengo miedo"), de cómo éstos le provocan dolores y de afrontar el futuro con optimismo. "No me voy a deprimir. Voy a empezar a medicarme y a vivir", sentencia..
+            </strong>
         </div>
         <div>
             <strong class="preguntas">¿Cual fue su enfermedad?</strong>
             <select id="selector" class="selectores" onchange="comprueba()">
                 <option value="" disabled selected>Selecciona una opción</option>
                 <option value="0" class="selectores">Gripe infecciosa</option>
-                <option value="1" class="selectores">Contaminación por radiación</option>
-                <option value="2" class="selectores">Muerte por accidente de tráfico</option>
+                <option value="1" class="selectores">Radiación</option>
+                <option value="2" class="selectores">Parkinson</option>
             </select>
         </div>
         <div align="center">

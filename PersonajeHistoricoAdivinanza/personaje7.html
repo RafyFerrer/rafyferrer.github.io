@@ -12,7 +12,7 @@
 
                 var s=document.getElementById("selector");
                 var r=document.getElementById("resultado");
-                if (s.value == "1"){
+                if (s.value == "0"){
                     r.src="images/Ok.png";
                 }
                 else{
@@ -26,21 +26,28 @@
     </head>
     <body>
 
-        <h1 align="center">MARIE CURIE</h1>
+        <h1 align="center">CAMERON BOYCE</h1>
         <div align="center">
-            <img src="images/MarieCurie.jpg" alt="falta imagen de Marie Curie">
+            <img src="images/personaje7.jpg" alt="falta imagen" width="150" height="150">
            
         </div>
         <div>
-            <strong>Científica especializada en energía nuclear. Descubrió el Polonio y el radio, dos materiales muy radiactivos, con lo que estuvo mucho tiempo expuesta a este tipo de radiación</strong>
+            <strong>
+                Actor
+            </strong>
+            <strong>
+                Su enfermedad es un trastorno del sistema nervioso central (neurológico) en el que la actividad cerebral se vuelve anormal, lo que provoca convulsiones o períodos de comportamientos o sensaciones inusuales.
+Una crisis especialmente fuerte le asaltó mientras dormía, falleciendo a los 20 años.
+
+            </strong>
         </div>
         <div>
             <strong class="preguntas">¿Cual fue su enfermedad?</strong>
             <select id="selector" class="selectores" onchange="comprueba()">
                 <option value="" disabled selected>Selecciona una opción</option>
-                <option value="0" class="selectores">Gripe infecciosa</option>
-                <option value="1" class="selectores">Contaminación por radiación</option>
-                <option value="2" class="selectores">Muerte por accidente de tráfico</option>
+                <option value="0" class="selectores">Epilepsia</option>
+                <option value="1" class="selectores">ceguera</option>
+                <option value="2" class="selectores">cojera</option>
             </select>
         </div>
         <div align="center">
