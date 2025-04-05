@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Juego de adivina la enfermedad del personaje">
+        <meta name="keywords" content="personaje, histórico, juego, adivina">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilo.css" type="text/css">
+        <title>Primer Personaje</title>
+        <script>
+            function comprueba(){
+
+                var s=document.getElementById("selector");
+                var r=document.getElementById("resultado");
+                if (s.value == "2"){
+                    r.src="images/Ok.png";
+                }
+                else{
+                    r.src="images/NoOk.jpg"
+                }
+
+            }
+
+
+        </script>
+    </head>
+    <body>
+
+        <h1 align="center">BRIAN GRANT</h1>
+        <div align="center">
+            <img src="images/personaje10.jpg" alt="falta imagen" width="150" height="150">
+           
+        </div>
+        <div>
+            <strong>
+                jugador de baloncesto norteamericano.
+            </strong>
+            <strong>
+                Grant habla con total naturalidad de los temblores que sufre ("no les tengo miedo"), de cómo éstos le provocan dolores y de afrontar el futuro con optimismo. "No me voy a deprimir. Voy a empezar a medicarme y a vivir", sentencia..
+            </strong>
+        </div>
+        <div>
+            <strong class="preguntas">¿Cual fue su enfermedad?</strong>
+            <select id="selector" class="selectores" onchange="comprueba()">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="0" class="selectores">Gripe infecciosa</option>
+                <option value="1" class="selectores">Radiación</option>
+                <option value="2" class="selectores">Parkinson</option>
+            </select>
+        </div>
+        <div align="center">
+            <img id="resultado" src="images/Espera.jpg" width="100" height="100">
+        </div>
+        <a href="index.html"><h3>Volver</h3></a> 
+    </body>
+
+</html>

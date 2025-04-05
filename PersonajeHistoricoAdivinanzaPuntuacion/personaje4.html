@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Juego de adivina la enfermedad del personaje">
+        <meta name="keywords" content="personaje, histórico, juego, adivina">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilo.css" type="text/css">
+        <title>Primer Personaje</title>
+        <script>
+            function comprueba(){
+
+                var s=document.getElementById("selector");
+                var r=document.getElementById("resultado");
+                if (s.value == "2"){
+                    r.src="images/Ok.png";
+                }
+                else{
+                    r.src="images/NoOk.jpg"
+                }
+
+            }
+
+
+        </script>
+    </head>
+    <body>
+
+        <h1 align="center">MUHAMAD ALI</h1>
+        <div align="center">
+            <img src="images/personaje4.jpg" alt="falta imagen" width="150" height="150">
+           
+        </div>
+        <div>
+            <strong>
+                Boxeador.
+            </strong>
+            <strong>
+                Su madre padeció la misma enfermedad que él. Cuando alguien le dijo que los cientos de golpes recibidos podrían ser la causa de su enfermedad el respondió que su madre no había recibido ni un golpe en su vida y acabó como él.
+"Cuando me hablan, algunas personas suben mucho la voz. Otras, lo hacen muy lentamente y hay quienes hacen las dos cosas. No me cuesta oír y mi enfermedad no ha afectado mi habilidad para pensar y razonar. Simplemente me muevo más lentamente y hablo más tenuemente y con menos frecuencia. También me muevo con dificultad"
+.
+            </strong>
+        </div>
+        <div>
+            <strong class="preguntas">¿Cual fue su enfermedad?</strong>
+            <select id="selector" class="selectores" onchange="comprueba()">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="0" class="selectores">Gripe infecciosa</option>
+                <option value="1" class="selectores">Tumor cerebrar</option>
+                <option value="2" class="selectores">Parkinson</option>
+            </select>
+        </div>
+        <div align="center">
+            <img id="resultado" src="images/Espera.jpg" width="100" height="100">
+        </div>
+        <a href="index.html"><h3>Volver</h3></a> 
+    </body>
+
+</html>

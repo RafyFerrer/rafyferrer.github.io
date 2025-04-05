@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Juego de adivina la enfermedad del personaje">
+        <meta name="keywords" content="personaje, histórico, juego, adivina">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilo.css" type="text/css">
+        <title>Primer Personaje</title>
+        <script>
+            function comprueba(){
+
+                var s=document.getElementById("selector");
+                var r=document.getElementById("resultado");
+                if (s.value == "1"){
+                    r.src="images/Ok.png";
+                }
+                else{
+                    r.src="images/NoOk.jpg"
+                }
+
+            }
+
+
+        </script>
+    </head>
+    <body>
+
+        <h1 align="center">PASQUAL MARAGALL</h1>
+        <div align="center">
+            <img src="images/personaje6.jpg" alt="falta imagen" width="150" height="150">
+           
+        </div>
+        <div>
+            <strong>
+                Presidente de la Generalidad de Cataluña entre 2003 y 2006 y alcalde de Barcelona de1982 a 1997.
+            </strong>
+            <strong>
+                En ningún sitio está escrito que esta enfermedad sea invencible». dijo Pasqual Maragall, cuando anunció en una rueda de prensa que tenía la enfermedad. Tuvo tiempo de crear una fundación con su nombre, que constituye su gran legado personal más allá de la política, aunque no recuerde ya quien es.
+            </strong>
+        </div>
+        <div>
+            <strong class="preguntas">¿Cual fue su enfermedad?</strong>
+            <select id="selector" class="selectores" onchange="comprueba()">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="0" class="selectores">Resfriado</option>
+                <option value="1" class="selectores">Alzheimer</option>
+                <option value="2" class="selectores">Conjuntivitis</option>
+            </select>
+        </div>
+        <div align="center">
+            <img id="resultado" src="images/Espera.jpg" width="100" height="100">
+        </div>
+        <a href="index.html"><h3>Volver</h3></a> 
+    </body>
+
+</html>

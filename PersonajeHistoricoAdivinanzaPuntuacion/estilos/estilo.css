@@ -1,0 +1,21 @@
+table, td{
+    border: 3px green solid;
+}
+h1, div{
+    border: 2px blue solid;
+    box-shadow:  10px 10px 10px grey;
+    border-radius: 20px;
+    padding: 20px;
+}
+.preguntas{
+    font-size: 20px;
+}
+.selectores{
+    font-size: 20px;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fx);
+    gap: 10px;
+}
